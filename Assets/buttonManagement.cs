@@ -30,5 +30,5 @@ public class buttonManagement : MonoBehaviour
         menuPrincipal.SetActive(false);
         menuAmelioration.SetActive(true);
     }
-    
+
 }

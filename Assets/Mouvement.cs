@@ -11,7 +11,7 @@ public class Mouvement : MonoBehaviour
     public string moveLeft;
     public string moveRight;
     public string dash;
-    public int walkSpeed;
+    public float walkSpeed;
     public int rotationSpeed;
     public Vector3 jumpSpeed;
 
@@ -34,6 +34,27 @@ public class Mouvement : MonoBehaviour
     {
         animalColider = gameObject.GetComponent<CapsuleCollider>();
         currentDashTime = maxDashTime;
+        if (PlayerPrefs.HasKey("moveSpeed"))
+        {
+            walkSpeed = PlayerPrefs.GetFloat("moveSpeed");
+        }
+
+        else if (!PlayerPrefs.HasKey("moveSpeed"))
+        {
+            walkSpeed = 6f;
+            PlayerPrefs.SetFloat("moveSpeed", walkSpeed);
+        }
+
+        if (PlayerPrefs.HasKey("moveJumpSpeed"))
+        {
+            jumpSpeed = new Vector3(0,PlayerPrefs.GetFloat("moveJumpSpeed"),0);
+        }
+
+        else if (!PlayerPrefs.HasKey("moveJumpSpeed"))
+        {
+            jumpSpeed = new Vector3(0,5,0);
+            PlayerPrefs.SetFloat("moveJumpSpeed", jumpSpeed.y);
+        }
     }
 
     //vérification touche le sol
@@ -108,4 +129,5 @@ public class Mouvement : MonoBehaviour
         }
         transform.Translate(moveDirection * Time.deltaTime);
     }
+        
 }

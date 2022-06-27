@@ -435,7 +435,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 39133158}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1208980568}
+        m_MethodName: UpgradeHealth
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &39133158
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -617,6 +628,63 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &116224765
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1014789747999944, guid: 9f261fd1add2311419c0a9eaeabc7d13, type: 3}
+      propertyPath: m_Name
+      value: African_elephant
+      objectReference: {fileID: 0}
+    - target: {fileID: 4864296859349792, guid: 9f261fd1add2311419c0a9eaeabc7d13, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4864296859349792, guid: 9f261fd1add2311419c0a9eaeabc7d13, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4864296859349792, guid: 9f261fd1add2311419c0a9eaeabc7d13, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4864296859349792, guid: 9f261fd1add2311419c0a9eaeabc7d13, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4864296859349792, guid: 9f261fd1add2311419c0a9eaeabc7d13, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4864296859349792, guid: 9f261fd1add2311419c0a9eaeabc7d13, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4864296859349792, guid: 9f261fd1add2311419c0a9eaeabc7d13, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4864296859349792, guid: 9f261fd1add2311419c0a9eaeabc7d13, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4864296859349792, guid: 9f261fd1add2311419c0a9eaeabc7d13, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4864296859349792, guid: 9f261fd1add2311419c0a9eaeabc7d13, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4864296859349792, guid: 9f261fd1add2311419c0a9eaeabc7d13, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9f261fd1add2311419c0a9eaeabc7d13, type: 3}
 --- !u!1 &166171548
 GameObject:
   m_ObjectHideFlags: 0
@@ -1431,6 +1499,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 806084570}
   m_CullTransparentMesh: 0
+--- !u!1 &866873307
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 866873309}
+  - component: {fileID: 866873308}
+  m_Layer: 0
+  m_Name: DesactivateElephant
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &866873308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866873307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba567621167531442be6e2864ab3d23f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  elephant: {fileID: 1391631608}
+--- !u!4 &866873309
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866873307}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.9882414, y: 1.2083752, z: -11.350592}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &871084516
 GameObject:
   m_ObjectHideFlags: 0
@@ -2024,7 +2136,6 @@ GameObject:
   - component: {fileID: 1208980564}
   - component: {fileID: 1208980567}
   - component: {fileID: 1208980566}
-  - component: {fileID: 1208980565}
   - component: {fileID: 1208980568}
   m_Layer: 5
   m_Name: Image
@@ -2053,20 +2164,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 96}
   m_SizeDelta: {x: 500, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1208980565
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1208980563}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ee6e3367e84bd945a3232516b52db68, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  menuAmelioration: {fileID: 0}
-  menuPrincipal: {fileID: 0}
 --- !u!114 &1208980566
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2118,6 +2215,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menuPrincipal: {fileID: 744171753}
   menuAmelioration: {fileID: 34517961}
+  speed: {fileID: 1391631609}
+  vie: {fileID: 1391631612}
 --- !u!1 &1247364905
 GameObject:
   m_ObjectHideFlags: 0
@@ -2497,7 +2596,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1347116013}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1208980568}
+        m_MethodName: UpgradeJumpSpeed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1347116013
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2535,6 +2645,54 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1347116010}
   m_CullTransparentMesh: 0
+--- !u!1 &1391631608 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1014789747999944, guid: 9f261fd1add2311419c0a9eaeabc7d13,
+    type: 3}
+  m_PrefabInstance: {fileID: 116224765}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1391631609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1391631608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7462e9d7472e5794bac1db1c6ae71dae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveFront: z
+  moveBack: s
+  moveLeft: q
+  moveRight: d
+  dash: a
+  walkSpeed: 6
+  rotationSpeed: 200
+  jumpSpeed: {x: 0, y: 5, z: 0}
+  rayDistance: 1
+  layers:
+    serializedVersion: 2
+    m_Bits: 1
+  moveDirection: {x: 0, y: 0, z: 0}
+  maxDashTime: 1
+  dashSpeed: 1
+  dashStoppingSpeed: 0.1
+--- !u!114 &1391631612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1391631608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c970d87e9666cb4bbec2667d06affb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  degatAnimal: 1
+  vie: 0
 --- !u!1 &1542290608
 GameObject:
   m_ObjectHideFlags: 0
@@ -2927,7 +3085,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1874640304}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1208980568}
+        m_MethodName: UpgradeSpeed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1874640304
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3177,37 +3346,37 @@ PrefabInstance:
     - target: {fileID: 2883747369344259983, guid: a95aef06405fd9443a0a6e1129f56dc9,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.24049479
+      value: 0.21997072
       objectReference: {fileID: 0}
     - target: {fileID: 2883747369344259983, guid: a95aef06405fd9443a0a6e1129f56dc9,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.030602332
+      value: 0.04244905
       objectReference: {fileID: 0}
     - target: {fileID: 2883747369344259983, guid: a95aef06405fd9443a0a6e1129f56dc9,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.007624767
+      value: 0.009620239
       objectReference: {fileID: 0}
     - target: {fileID: 2883747369344259983, guid: a95aef06405fd9443a0a6e1129f56dc9,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.97013795
+      value: -0.974535
       objectReference: {fileID: 0}
     - target: {fileID: 2883747369344259983, guid: a95aef06405fd9443a0a6e1129f56dc9,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -345.9179
+      value: -758.5664
       objectReference: {fileID: 0}
     - target: {fileID: 2883747369344259983, guid: a95aef06405fd9443a0a6e1129f56dc9,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -502.86127
+      value: -134.38441
       objectReference: {fileID: 0}
     - target: {fileID: 2883747369344259983, guid: a95aef06405fd9443a0a6e1129f56dc9,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -960.34534
+      value: -551.55304
       objectReference: {fileID: 0}
     - target: {fileID: 5460016725594980920, guid: a95aef06405fd9443a0a6e1129f56dc9,
         type: 3}

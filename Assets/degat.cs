@@ -7,12 +7,20 @@ using UnityEngine.UI;
 public class degat : MonoBehaviour
 {
     public int degatAnimal = 1;
-    public int vie = 10;
+    public int vie;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        if(PlayerPrefs.HasKey("vie"))
+        {
+            vie = PlayerPrefs.GetInt("vie");
+        }
+        else if(!PlayerPrefs.HasKey("vie"))
+        {
+            vie = 5;
+            PlayerPrefs.SetInt("vie", vie);
+        }
     }
 
     // Update is called once per frame
