@@ -205,7 +205,7 @@ public class MouvementAnimeVF : MonoBehaviour
             desactive();
                     transform.Translate(new Vector3(0, -(walkSpeed * Time.deltaTime), walkSpeed * Time.deltaTime));
                     //transform.Rotate(new Vector3( (walkSpeed * Time.deltaTime),0 , 0));
-                    animator.SetBool("stationaire", true);
+                    //animator.SetBool("stationaire", true);
 
                 }
                
