@@ -25,7 +25,7 @@ public class MouvementAnimeVF : MonoBehaviour
 
     public Vector3 moveDirection;
     public float maxDashTime = 1.0f;
-    public float dashSpeed = 1.0f;
+    public float dashSpeed = 3.0f;
     public float dashStoppingSpeed = 0.1f;
 
     private float currentDashTime;
@@ -151,12 +151,12 @@ public class MouvementAnimeVF : MonoBehaviour
             animator.SetBool("run", true);
 
 
-            currentDashTime = 0.0f;
+            //currentDashTime = 0.0f;
         }
              if (currentDashTime < maxDashTime)
         {
 
-            moveDirection = new Vector3(0, 0, dashSpeed);
+            moveDirection = new Vector3(0, dashSpeed, dashSpeed);
             currentDashTime += dashStoppingSpeed;
         }
              else
@@ -224,6 +224,7 @@ public class MouvementAnimeVF : MonoBehaviour
                 if (Input.GetKey(moveLeft))
                 {
             desactive();
+                    transform.Translate(new Vector3((walkSpeed/4) * Time.deltaTime,0, (walkSpeed/4) * Time.deltaTime));
                     transform.Rotate(new Vector3(0, -(rotationSpeed / 2 * Time.deltaTime), 0));
                     animator.SetBool("tourne", true);
 
@@ -232,6 +233,7 @@ public class MouvementAnimeVF : MonoBehaviour
                 if (Input.GetKey(moveRight))
                 {
             desactive();
+                    transform.Translate(new Vector3((walkSpeed/4) * Time.deltaTime, 0, (walkSpeed/4) * Time.deltaTime));
                     transform.Rotate(new Vector3(0, rotationSpeed / 2 * Time.deltaTime, 0));
                     animator.SetBool("tourne", true);
 
@@ -249,7 +251,7 @@ public class MouvementAnimeVF : MonoBehaviour
                     animator.SetBool("stationaire", false);
                 animator.SetBool("tourne", false);
 
-                transform.Translate(new Vector3(0, -((walkSpeed / 4) * Time.deltaTime), (walkSpeed / 2) * Time.deltaTime));
+                transform.Translate(new Vector3(0, -((walkSpeed / 8) * Time.deltaTime), (walkSpeed / 2) * Time.deltaTime));
 
 
             }
