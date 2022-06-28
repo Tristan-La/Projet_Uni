@@ -8,11 +8,12 @@ public class buttonManagement : MonoBehaviour
 {
     public GameObject menuAmelioration;
     public GameObject menuPrincipal;
-
+    public GameObject menuControl;
     // Start is called before the first frame update
     void Start()
     {
         menuAmelioration.SetActive(false);
+        menuControl.SetActive(false);
     }
 
     public void Leave()
@@ -29,6 +30,12 @@ public class buttonManagement : MonoBehaviour
     {
         menuPrincipal.SetActive(false);
         menuAmelioration.SetActive(true);
+    }
+
+    public void ChangeControl()
+    {
+        menuPrincipal.SetActive(false);
+        menuControl.SetActive(true);
     }
 
 }

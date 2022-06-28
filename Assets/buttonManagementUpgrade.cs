@@ -8,6 +8,7 @@ public class buttonManagementUpgrade : MonoBehaviour
 {
     public GameObject menuPrincipal;
     public GameObject menuAmelioration;
+    public GameObject menuControl;
     public MouvementAnime speed;
     public degat vie;
     public Text texteSpeed;
@@ -158,6 +159,7 @@ public class buttonManagementUpgrade : MonoBehaviour
     public void Return()
     {
         menuAmelioration.SetActive(false);
+        menuControl.SetActive(false);
         menuPrincipal.SetActive(true);
     }
 
