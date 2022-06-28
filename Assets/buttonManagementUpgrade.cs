@@ -9,7 +9,7 @@ public class buttonManagementUpgrade : MonoBehaviour
     public GameObject menuPrincipal;
     public GameObject menuAmelioration;
     public GameObject menuControl;
-    public MouvementAnime speed;
+    public MouvementAnimeVF speed;
     public degat vie;
     public Text texteSpeed;
     public Text texteJumpSpeed;

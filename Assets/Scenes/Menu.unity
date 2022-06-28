@@ -732,15 +732,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4864296859349792, guid: 9f261fd1add2311419c0a9eaeabc7d13, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4864296859349792, guid: 9f261fd1add2311419c0a9eaeabc7d13, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4864296859349792, guid: 9f261fd1add2311419c0a9eaeabc7d13, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4864296859349792, guid: 9f261fd1add2311419c0a9eaeabc7d13, type: 3}
       propertyPath: m_LocalRotation.w
@@ -748,7 +748,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4864296859349792, guid: 9f261fd1add2311419c0a9eaeabc7d13, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4864296859349792, guid: 9f261fd1add2311419c0a9eaeabc7d13, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2622,7 +2622,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &869406577
 GameObject:
@@ -3919,7 +3919,7 @@ MonoBehaviour:
   menuPrincipal: {fileID: 744171753}
   menuAmelioration: {fileID: 34517961}
   menuControl: {fileID: 882699360}
-  speed: {fileID: 1391631609}
+  speed: {fileID: 0}
   vie: {fileID: 1391631612}
   texteSpeed: {fileID: 508209581}
   texteJumpSpeed: {fileID: 1020593072}
@@ -4529,7 +4529,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1391631608}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 660cf768c73ee6645a1a3add2b5acf89, type: 3}
+  m_Script: {fileID: 11500000, guid: 20584d4ed70ee8c40a6c4d06c081d892, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   moveFront: z
@@ -5874,8 +5874,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menuPrincipal: {fileID: 744171753}
   menuAmelioration: {fileID: 34517961}
-  menuControl: {fileID: 0}
-  speed: {fileID: 1391631609}
+  menuControl: {fileID: 882699360}
+  speed: {fileID: 0}
   vie: {fileID: 1391631612}
   texteSpeed: {fileID: 508209581}
   texteJumpSpeed: {fileID: 1020593072}
@@ -5932,7 +5932,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a175f7183ecf9164fb64cd6d4d819205, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouvement: {fileID: 1391631609}
+  mouvement: {fileID: 0}
 --- !u!1 &1874640301
 GameObject:
   m_ObjectHideFlags: 0

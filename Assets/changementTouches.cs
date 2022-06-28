@@ -5,7 +5,7 @@ using UnityEngine;
 public class changementTouches : MonoBehaviour
 {
 
-    public MouvementAnime mouvement;
+    public MouvementAnimeVF mouvement;
     // Start is called before the first frame update
     void Start()
     {
