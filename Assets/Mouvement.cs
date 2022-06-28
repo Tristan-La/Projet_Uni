@@ -34,27 +34,8 @@ public class Mouvement : MonoBehaviour
     {
         animalColider = gameObject.GetComponent<CapsuleCollider>();
         currentDashTime = maxDashTime;
-        if (PlayerPrefs.HasKey("moveSpeed"))
-        {
-            walkSpeed = PlayerPrefs.GetFloat("moveSpeed");
-        }
 
-        else if (!PlayerPrefs.HasKey("moveSpeed"))
-        {
-            walkSpeed = 6f;
-            PlayerPrefs.SetFloat("moveSpeed", walkSpeed);
-        }
-
-        if (PlayerPrefs.HasKey("moveJumpSpeed"))
-        {
-            jumpSpeed = new Vector3(0,PlayerPrefs.GetFloat("moveJumpSpeed"),0);
-        }
-
-        else if (!PlayerPrefs.HasKey("moveJumpSpeed"))
-        {
-            jumpSpeed = new Vector3(0,5,0);
-            PlayerPrefs.SetFloat("moveJumpSpeed", jumpSpeed.y);
-        }
+        
     }
 
     //vérification touche le sol
@@ -68,6 +49,36 @@ public class Mouvement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (PlayerPrefs.HasKey("moveSpeed"))
+        {
+            walkSpeed = PlayerPrefs.GetFloat("moveSpeed");
+            Debug.Log("speed pris");
+        }
+
+        else if (!PlayerPrefs.HasKey("moveSpeed"))
+        {
+            walkSpeed = 6f;
+            PlayerPrefs.SetFloat("moveSpeed", walkSpeed);
+            Debug.Log("speed set");
+        }
+
+        if (PlayerPrefs.HasKey("moveJumpSpeed"))
+        {
+            jumpSpeed = new Vector3(0, PlayerPrefs.GetFloat("moveJumpSpeed"), 0);
+            Debug.Log("jumpspeed pris");
+        }
+
+        else if (!PlayerPrefs.HasKey("moveJumpSpeed"))
+        {
+            jumpSpeed = new Vector3(0, 5, 0);
+            PlayerPrefs.SetFloat("moveJumpSpeed", jumpSpeed.y);
+            Debug.Log("jumpspeed set");
+        }
+
+
+
+
+
         if (Input.GetKey(moveFront))
         {
             //int direction = (int)Input.mousePosition.y;

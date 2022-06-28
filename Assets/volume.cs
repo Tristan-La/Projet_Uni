@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class volume : MonoBehaviour
 {
     [SerializeField] Slider sliderVolume;
+    public Text texteSpeed;
+
     // Start is called before the first frame update
     void Start()
     {

@@ -11,7 +11,7 @@ public class MouvementAnime : MonoBehaviour
     public string moveLeft ="q";
     public string moveRight = "d";
     public string dash = "a";
-    public int walkSpeed = 6;
+    public float walkSpeed = 6;
     public int rotationSpeed = 200;
     public Vector3 jumpSpeed;
 
